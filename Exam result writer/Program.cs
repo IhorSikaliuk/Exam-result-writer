@@ -19,7 +19,7 @@ namespace Exam_result_writer
             string Name;
             int Mark = 0;
             const int minMark = 1, maxMark = 5;
-            Console.Write("Вводіть парами по черзі прізвище та оцінку студента.");
+            Console.Write("Вводіть парами по черзі прізвище студента, далі через Enter його оцінку.\nДля закінчення роботи нічого не вводячи ще раз натисніть Enter.");
             for(int i = 1; Continue; i++)
             {
                 Console.WriteLine($"\n{i}:");
