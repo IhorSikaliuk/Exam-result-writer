@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exam_result_writer
 {
@@ -45,6 +41,13 @@ namespace Exam_result_writer
                         continue;
                     }
                 }
+                if (Name.Contains("-"))
+                {
+                    Console.WriteLine("Прізвище не може містити символу '-'.");
+                    i--;
+                    continue;
+                }
+
                 try
                 {
                     Mark = Convert.ToInt32(Console.ReadLine());
